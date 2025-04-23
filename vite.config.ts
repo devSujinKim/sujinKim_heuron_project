@@ -8,4 +8,17 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
+  resolve: {
+    alias: {
+      '@': '/src',
+      '@components': '/src/components',
+      '@pages': '/src/pages',
+      '@styles': '/src/styles',
+      '@hooks': '/src/hooks',
+      '@utils': '/src/utils',
+      '@context': '/src/context',
+      '@api': '/src/api',
+      '@assets': '/src/assets',
+    },
+  },
 });
