@@ -6,12 +6,16 @@ interface NavItemProps {
 }
 
 export const HeaderContainer = styled.header`
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  z-index: 1200;
 `;
 
 export const Logo = styled.div`
