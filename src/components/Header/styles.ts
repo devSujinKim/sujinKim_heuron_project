@@ -31,16 +31,19 @@ export const Logo = styled.div`
 
 export const Navigation = styled.nav`
   display: flex;
-  gap: 8px;
+  gap: 24px;
 `;
 
 export const NavItem = styled.div<NavItemProps>`
   position: relative;
+  padding: 8px 0;
 
   a {
+    display: block;
     color: ${({ $active }) =>
-      $active ? theme.colors.primary : theme.colors.secondary};
+      $active ? theme.colors.primary : theme.colors.darkGray};
     font-weight: ${({ $active }) => ($active ? '600' : '400')};
+    transition: color 0.1s ease;
 
     &:hover {
       color: ${theme.colors.primary};
@@ -50,13 +53,13 @@ export const NavItem = styled.div<NavItemProps>`
   &::after {
     content: '';
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 2px;
     background-color: ${theme.colors.primary};
     transform: scaleX(${({ $active }) => ($active ? '1' : '0')});
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease;
   }
 
   &:hover::after {
