@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
+  margin-top: 16px;
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
@@ -27,17 +27,17 @@ export const TableRow = styled.tr`
 `;
 
 export const TableHeader = styled.th`
-  padding: 1rem;
+  padding: 16px;
   text-align: left;
 `;
 
 export const TableCell = styled.td`
-  padding: 1rem;
+  padding: 16px;
   border-bottom: 1px solid #eee;
 `;
 
 export const ThumbnailCell = styled.td`
-  padding: 0.5rem;
+  padding: 8px;
   border-bottom: 1px solid #eee;
   width: 100px;
   height: 100px;

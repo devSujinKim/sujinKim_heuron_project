@@ -4,7 +4,7 @@ export const DetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 32px;
   max-width: 1000px;
   margin: 0 auto;
   background-color: white;
@@ -14,13 +14,13 @@ export const DetailContainer = styled.div`
 
 export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.primary};
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
   text-align: center;
 `;
 
 export const CanvasContainer = styled.div`
-  margin: 1.5rem 0;
-  padding: 1rem;
+  margin: 24px 0;
+  padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   overflow: hidden;
@@ -36,15 +36,15 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 800px;
-  margin-top: 1.5rem;
+  margin-top: 24px;
   border-top: 1px solid ${({ theme }) => theme.colors.lightGray};
-  padding-top: 1.5rem;
+  padding-top: 24px;
 `;
 
 export const InfoRow = styled.div`
   display: flex;
-  margin-bottom: 0.75rem;
-  padding: 0.5rem 0;
+  margin-bottom: 12px;
+  padding: 8px 0;
 `;
 
 export const InfoLabel = styled.span`
@@ -62,8 +62,8 @@ export const BackButton = styled.button`
   color: white;
   border: none;
   border-radius: 4px;
-  padding: 0.75rem 1.5rem;
-  margin-top: 2rem;
+  padding: 12px 24px;
+  margin-top: 32px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.2s;
@@ -75,8 +75,8 @@ export const BackButton = styled.button`
 
 export const CanvasControls = styled.div`
   display: flex;
-  gap: 1rem;
-  margin: 0.5rem 0 1.5rem;
+  gap: 16px;
+  margin: 8px 0 24px;
 `;
 
 export const ControlButton = styled.button`
@@ -84,7 +84,7 @@ export const ControlButton = styled.button`
   color: white;
   border: none;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   cursor: pointer;
   font-weight: 500;
   transition: all 0.2s;
@@ -96,8 +96,7 @@ export const ControlButton = styled.button`
 
 export const NoImageText = styled.div`
   text-align: center;
-  padding: 3rem;
-  font-size: 1.2rem;
+  padding: 48px;
   color: ${({ theme }) => theme.colors.darkGray};
-  margin: 2rem 0;
+  margin: 32px 0;
 `;
