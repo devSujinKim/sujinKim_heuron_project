@@ -24,6 +24,9 @@ const Header = () => {
         <NavItem $active={isActive('/cardgame')}>
           <Link to="/cardgame">과제 2</Link>
         </NavItem>
+        <NavItem $active={isActive('/searchlist')}>
+          <Link to="/searchlist">과제 3</Link>
+        </NavItem>
       </Navigation>
     </HeaderContainer>
   );
