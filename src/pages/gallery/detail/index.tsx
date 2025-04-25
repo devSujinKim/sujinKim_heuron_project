@@ -6,12 +6,10 @@ import { useImageDetail } from '@/hooks/useImageDetail';
 import { useCanvasInteraction } from '@/hooks/useCanvasInteraction';
 import { useCanvasRenderer } from '@/hooks/useCanvasRenderer';
 import { DetailContainer, Title, BackButton } from './index.styles';
-
-// 하위 컴포넌트 임포트
-import ImageCanvas from './components/ImageCanvas';
-import ImageControls from './components/ImageControls';
-import ImageInfo from './components/ImageInfo';
-import ErrorDisplay from './components/ErrorDisplay';
+import ImageCanvas from './_components/ImageCanvas';
+import ImageControls from './_components/ImageControls';
+import ImageInfo from './_components/ImageInfo';
+import ErrorDisplay from './_components/ErrorDisplay';
 
 /**
  * 이미지 상세 정보 페이지 컴포넌트

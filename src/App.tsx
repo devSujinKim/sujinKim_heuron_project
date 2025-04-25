@@ -3,6 +3,7 @@ import GlobalStyle from './styles/GlobalStyle';
 import Layout from './components/Layout';
 import GalleryPage from './pages/gallery';
 import ImageDetailPage from './pages/gallery/detail';
+import CardGame from './pages/cardgame';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<GalleryPage />} />
           <Route path="/:id" element={<ImageDetailPage />} />
+          <Route path="/cardgame" element={<CardGame />} />
         </Routes>
       </Layout>
     </>
